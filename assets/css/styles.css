@@ -1,0 +1,382 @@
+/* ---------------------------------------------------
+    GLOBAL
+----------------------------------------------------- */
+:root{
+    --background-color: #424242;
+    --link-color: #212529;
+    --link-hover-color: #535353;
+    --link-bg-hover-color: #f3f3f3;
+
+}
+
+body{
+    margin:auto;
+    max-width: 1600px;
+    background: rgb(46,46,46);
+    background: linear-gradient(90deg, rgba(46,46,46,1) 0%, rgba(63,89,164,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.row{
+    margin: 0;
+}
+
+.logo-nav{
+    width: 8em;
+    height: 3em;
+}
+
+.invalid{
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+/*
+@media screen and (max-width: 992px) {
+*/
+
+a:link, a:visited, a:active {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.orange-color{
+    color: orange;
+}
+
+textarea{
+    resize: none;
+}
+
+.scrolling-box{
+    height: 300px ; 
+    overflow-y: scroll ;
+}
+
+/*BOOTSTRAP*/
+.btn-link{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: var(--link-hover-color);
+}
+
+.btn-link:active {
+    text-decoration:none;
+}
+.btn-link:visited {
+    text-decoration:none;
+}
+
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: rgb(160, 160, 160) !important;
+}
+/* ---------------------------------------------------
+    LOGIN
+----------------------------------------------------- */
+
+.logo-login{
+    width: 150px;
+    height: 150px;
+}
+
+#signUp{
+    display: none;
+}
+
+.form-signin{
+    /*max-width: 400px;*/
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px 40px 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.form-signin .form-signin-heading{
+    margin-bottom: 30px;
+}
+
+.image-field {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.label-image-user {
+    display: block;
+    text-align: center;
+}
+#image-user {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/* ---------------------------------------------------
+    PRINCIPAL
+-----------------------------------------------------*/
+
+.a-course:hover{
+    color: var(--link-hover-color);
+    background-color: var(--link-bg-hover-color);
+}
+
+/* ---------------------------------------------------
+    RESEÑA
+-----------------------------------------------------*/
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  .label-star:hover,
+  .label-star:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+/*
+  PAY COURSE
+*/
+.priceText{
+    font-size: large;
+}
+
+/* ---------------------------------------------------
+    CHAPTER
+----------------------------------------------------- */
+.btn-chapter{
+    border: none;
+}
+
+/* ---------------------------------------------------
+    ADD COURSE
+----------------------------------------------------- */
+.category-box{
+    display: none;
+}
+
+.new-course-image{
+    width: 10rem;
+    height: 10rem;
+}
+
+
+/* ---------------------------------------------------
+    MY PROFILE
+----------------------------------------------------- */
+
+.menu-user{
+    background-color: #343a40 !important;
+    color: white;
+}
+.menu-user:hover{
+    background-color: #343a40;
+}
+
+.menu-user.active{
+    background-color: red;
+}
+
+.user-image-profile{
+    width: 7rem;
+    height: 7rem;
+
+}
+
+.new-user-image-profile{
+    width: 12rem;
+    height: 12rem;
+
+}
+
+/* ---------------------------------------------------
+    CHAT
+----------------------------------------------------- */
+.inbox_chat { 
+    height: 520px; 
+    overflow-y: scroll;
+}
+
+.chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+}
+
+.active_chat{ 
+    background:#ebebeb;
+}
+
+.chat_people{ 
+    overflow:hidden; 
+    clear:both;
+}
+
+.chat_img {
+    float: left;
+    width: 15%;
+}
+
+.chat_img img{
+    max-width: 100%;
+}
+
+.chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 85%;
+}
+
+.title-chat{
+    font-size: 15px;
+    color: #464646;
+    margin: 0 0 8px 0;
+}
+
+.chat_ib p{
+    font-size: 14px;
+    color: #989898;
+    margin: auto;
+}
+
+.chat_date{
+    font-size: 13px;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .chat_ib{
+    display:none;
+    }
+
+    .chat_img {
+        width: 100%;
+    }
+}
+
+
+/*chat*/
+.chat-card{
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.chat-container{
+    overflow-y: scroll !important; 
+    height:400px !important;
+}
+
+.msg-box{
+    font-size: small;
+    min-width: 0;
+    display:flex;
+    padding-right: 64px;
+    width: 100%;
+}
+
+.msg-box-user{
+    font-size: small;
+    min-width: 0;
+    padding-left: 64px;
+    width: 100%;
+}
+
+.msg-box>* {
+    margin: 0 8px
+}
+
+.avatar-msg{
+    position: relative;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #f5f6f7;
+    color: #8b95a5;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+.msg{
+    display: flex;
+    min-width: 0;
+    float: right;
+    clear: right;
+    background-clip: border-box;
+}
+
+
+.msg-container {
+    position: relative;
+    padding: 6px 8px;
+    margin: 4px 0;
+    border-radius: 3px;
+}
+
+.msg-box .msg .msg-body p{
+    background-color: #f5f6f7;
+}
+.msg-box-user .msg .msg-body p{
+    background-color: #48b0f7;
+}
+
+.meta{
+    background-color: transparent !important;
+    padding: 0;
+    opacity: .8;
+    font-size: small;
+}
+
+/*form*/
+.publisher {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #f9fafb
+}
